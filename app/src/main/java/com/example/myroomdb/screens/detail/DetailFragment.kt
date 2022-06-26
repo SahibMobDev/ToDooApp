@@ -38,7 +38,7 @@ class DetailFragment : Fragment() {
         val viewModel = ViewModelProvider(this).get(DetailViewModel::class.java)
 
         binding.tvTitleDetail.text = currentNote.title
-        binding.tvDescription.text = currentNote.title
+        binding.tvDescription.text = currentNote.description
 
         binding.btnDelete.setOnClickListener {
             viewModel.delete(currentNote) {}
